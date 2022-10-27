@@ -40,23 +40,18 @@
 
 
 ## Примеры применения ##
-
+```
 import url
 u = url.make('https://hexlet.io/community?q=low')
-
 u = url.set_scheme(u, 'http')
 url.to_string(u)  # 'http://hexlet.io/community?q=low'
-
 u = url.set_path(u, '/404')
 url.to_string(u)  # 'http://hexlet.io/404?q=low'
-
 url.get_query_param(u, 'q')  # 'low'
-
 u = url.set_query_param(u, 'page', 5)
 url.to_string(u)  # 'http://hexlet.io/404?q=low&page=5'
-
 u = url.set_query_param(u, 'q', 'high')
 url.to_string(u)  # 'http://hexlet.io/404?q=high&page=5'
-
 u = url.set_query_param(u, 'q', None)
 url.to_string(u)  # 'http://hexlet.io/404?page=5'
+```
