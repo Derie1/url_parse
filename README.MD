@@ -40,7 +40,7 @@
 
 
 ## Примеры применения ##
-______________________________________<>______________________________________
+
 import url
 u = url.make('https://hexlet.io/community?q=low')
 
@@ -60,5 +60,3 @@ url.to_string(u)  # 'http://hexlet.io/404?q=high&page=5'
 
 u = url.set_query_param(u, 'q', None)
 url.to_string(u)  # 'http://hexlet.io/404?page=5'
-
-______________________________________<>______________________________________
